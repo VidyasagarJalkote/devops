@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First DevOps Pipeline</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>🚀 Hello, DevOps!</h1>
+    <p>This page was automatically deployed to AWS S3 using a GitHub Actions CI/CD pipeline.</p>
+    <p class="meta">Every push to <code>main</code> rebuilds and redeploys this site — no manual uploads.</p>
+    <p class="version">Build: <span id="build-time"></span></p>
+  </div>
+  <script>
+    document.getElementById('build-time').textContent = new Date().toISOString();
+  </script>
+</body>
+</html>
